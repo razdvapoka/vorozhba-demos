@@ -1,0 +1,15 @@
+body {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+a {
+  text-transform: uppercase;
+}
+
+a:visited {
+  color: inherit;
+}
