@@ -20,7 +20,7 @@
 
       .box {
         width: 585px;
-        height: 585px;
+        height: 877.5px;
         background: #855aff;
         position: relative;
         overflow: hidden;
@@ -32,18 +32,23 @@
         }
       }
 
-      /*
-      @keyframes dash2 {
+      @keyframes ellipse-2-anim {
         to {
           stroke-dashoffset: -1417.135498046875;
         }
       }
 
-      .path-2 {
+      .ellipse-3 {
+        stroke-dasharray: 1417.135498046875;
+        stroke-dashoffset: 1417.135498046875;
+        animation: dash 15s linear infinite 0.2s;
+      }
+
+      .ellipse-4 {
         stroke-dasharray: 1417.135498046875;
         stroke-dashoffset: 0;
-        animation: dash2 15s linear forwards infinite alternate;
-      } */
+        animation: ellipse-2-anim 15s linear infinite;
+      }
 
       .ellipse-raw {
         stroke-dasharray: 1417.135498046875;
@@ -98,7 +103,7 @@
         <div class="arrow"></div>
         <div class="bg"></div>
       </div> -->
-      <svg width="100%" height="100%" viewBox="0 0 585 585" class="ellipse">
+      <svg width="100%" height="100%" viewBox="0 0 585 877.5" class="ellipse">
         <path
           class="ellipse-raw"
           d="
@@ -120,6 +125,30 @@
           fill="none"
           stroke="white"
           stroke-width="1"
+        />
+        <path
+          class="ellipse-3"
+          d="
+          M 292.5 731.25
+          m -292.5, 0
+          a 292.5,146.25 0 1,1 585,0
+          a 292.5,146.25 0 1,1 -585,0
+          "
+          fill="none"
+          stroke="white"
+          stroke-width="2"
+        />
+        <path
+          class="ellipse-4"
+          d="
+          M 292.5 731.25
+          m -292.5, 0
+          a 292.5,146.25 0 1,1 585,0
+          a 292.5,146.25 0 1,1 -585,0
+          "
+          fill="none"
+          stroke="white"
+          stroke-width="2"
         />
       </svg>
     </div>
