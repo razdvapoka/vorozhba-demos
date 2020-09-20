@@ -60,8 +60,18 @@
         animation-play-state: paused;
       }
 
+      .movingBox > div > div {
+        user-select: none;
+      }
+
       .movingBox > div > div:hover {
         color: crimson;
+      }
+
+      marquee {
+        margin-top: 4vw;
+        font-size: 2vw;
+        user-select: none;
       }
     </style>
   </head>
@@ -108,5 +118,8 @@
         </div>
       </div>
     </div>
+    <marquee>
+      &lt;marquee&gt;there is also a good ol' marquee stag!&lt;/marquee&gt;
+    </marquee>
   </body>
 </html>
