@@ -13,3 +13,7 @@ a {
 a:visited {
   color: inherit;
 }
+
+nav > ul > li + li {
+  margin-top: 10px;
+}
